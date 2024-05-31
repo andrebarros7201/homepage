@@ -6,6 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -58,7 +59,7 @@ main {
   max-height: 2rem;
 }
 
-.icons > img{
+.icons > img {
   max-height: 2rem;
 }
 
@@ -72,4 +73,48 @@ main {
   transform: scale(1.2, 1.6);
   border-radius: 15px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+.projects {
+  margin-top: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  padding: 2rem;
+}
+.projects > h1 {
+  font-size: 2rem;
+}
+
+.projects-content {
+  display: grid;
+  width: 70vw;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: min(300px, 500px);
+  grid-auto-flow: row;
+  grid-auto-rows: min(300px, 500px);
+  gap: 2rem;
+}
+
+.project {
+  box-shadow: 1px 2px 5px #000;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  max-width: 700px;
+}
+
+.project-top {
+  flex: 3;
+  background-color: red;
+
+}
+
+.project-bottom {
+  flex: 1;
+  padding: 1.25rem;
 }
